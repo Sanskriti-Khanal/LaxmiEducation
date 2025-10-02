@@ -36,6 +36,17 @@ body {
 
 /* Headings and text defaults */
 h1, h2, h3, h4, h5, h6 { color: var(--royal-blue); }
+
+/* Override heading color inside footer to light gray */
+.lec-footer h2,
+.lec-footer h3 { color: #D1D5DB; /* Tailwind gray-300 */ }
+
+/* Make default text inside footer light gray (overrides global black text) */
+.lec-footer p,
+.lec-footer li,
+.lec-footer span,
+.lec-footer small,
+.lec-footer label { color: #D1D5DB; }
 p, li, span, small, label { color: var(--foreground); }
 
 /* Section helpers */
