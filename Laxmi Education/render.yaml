@@ -2,9 +2,9 @@ services:
   - type: web
     name: laxmi-education
     env: node
-    rootDir: .
-    buildCommand: yarn install --frozen-lockfile && yarn build
-    startCommand: yarn start
+    rootDir: "Laxmi Education"
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
     autoDeploy: true
     envVars:
       - key: NODE_VERSION
